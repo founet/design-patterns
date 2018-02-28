@@ -1,11 +1,15 @@
 <?php
 
-use patterns\Hello;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$hello1 = Hello::getInstance();
-$hello2 = Hello::getInstance();
+$factory = new \patterns\Factory();
 
-var_dump($hello1, $hello2);
+
+$p1 = $factory->createProduct(1);
+
+$p2 = $factory->createProduct(2);
+
+dump($p1, $p2);
+
 
