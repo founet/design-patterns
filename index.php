@@ -3,19 +3,15 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-$product1Factory = new \patterns\Product1Factory();
 
-$product1 = $product1Factory->getProduct();
+$highBudgetMachineFactory = new \patterns\Factory\HighBudgetMachineFactory();
 
+$machineFactory = new \patterns\Factory\MachineFactory($highBudgetMachineFactory);
 
-$product2Factory = new \patterns\Product2Factory();
+$machine = $machineFactory->createMachine();
 
-$product2 = $product2Factory->getProduct();
+dump($machine->getMonitor()->displayPicture());
 
-
-dump($product1, $product2);
-
-dump($product2->addUid());
 
 
 
