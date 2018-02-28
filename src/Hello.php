@@ -1,5 +1,7 @@
 <?php
 
+namespace patterns;
+
 /**
  * Created by PhpStorm.
  * User: admin

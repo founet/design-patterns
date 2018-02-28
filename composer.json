@@ -1,0 +1,15 @@
+{
+    "name": "admin/design-patterns",
+    "authors": [
+        {
+            "name": "Amadou BAH",
+            "email": "abah@maltem.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "patterns\\": "src/"
+        }
+    },
+    "require": {}
+}
