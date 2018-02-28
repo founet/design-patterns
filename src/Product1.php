@@ -9,7 +9,7 @@
 namespace patterns;
 
 
-class ConcreteProduct1 implements Product
+class Product1 implements Product
 {
 
     private $name;
@@ -27,5 +27,10 @@ class ConcreteProduct1 implements Product
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+    public function addUid()
+    {
+        return $this->name. " ".uniqid();
     }
 }

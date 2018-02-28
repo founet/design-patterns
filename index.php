@@ -3,13 +3,20 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-$factory = new \patterns\Factory();
+$product1Factory = new \patterns\Product1Factory();
+
+$product1 = $product1Factory->getProduct();
 
 
-$p1 = $factory->createProduct(1);
+$product2Factory = new \patterns\Product2Factory();
 
-$p2 = $factory->createProduct(2);
+$product2 = $product2Factory->getProduct();
 
-dump($p1, $p2);
+
+dump($product1, $product2);
+
+dump($product2->addUid());
+
+
 
 
