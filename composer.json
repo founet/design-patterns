@@ -11,5 +11,7 @@
             "patterns\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "symfony/var-dumper": "^4.0"
+    }
 }
