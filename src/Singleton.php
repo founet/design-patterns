@@ -8,7 +8,7 @@ namespace patterns;
  * Date: 17/01/2018
  * Time: 11:27
  */
-class Hello
+class Singleton
 {
 
     private static $instance;
@@ -23,7 +23,7 @@ class Hello
     public static function getInstance()
     {
         if (is_null(self::$instance)) {
-            self::$instance = new Hello();
+            self::$instance = new Singleton();
         }
 
         return self::$instance;
